@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <style>
+      .good{background-color: #0C0 ;}
+      .moderate{background-color: #FFFF00 ;}
+      .usg{background-color: #FF9900  ;}
+      .unhealthy{background-color: #FF0000 ;}
+      .veryunhealty{background-color: #990066 ;}
+      .hazardous{background-color: #660000 ;}
+    </style>
   </head>
   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,8 +26,8 @@
                 </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">About</a>  
+            <a class="nav-item nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="{% url 'about' %}">About</a>  
         </div>
         </div>
         </nav>
