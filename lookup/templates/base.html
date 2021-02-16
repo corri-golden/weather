@@ -30,6 +30,13 @@
             <a class="nav-item nav-link" href="{% url 'about' %}">About</a>  
         </div>
         </div>
+        <div class="container-fluid">
+          <form action="{% url 'home' %}"class="d-flex" method="POST">
+          {% csrf_token %}
+          <input name="zipcode" class="form-control me-2" type="search" placeholder="Enter Zipcode" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
         </nav>
     <br/>
     <div class="container">
